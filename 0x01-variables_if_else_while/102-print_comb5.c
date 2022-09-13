@@ -1,39 +1,31 @@
 #include <stdio.h>
 /**
- * main - prints all possible combinations of 2 digits.
- * Numbers
- * Return: 0
+ * main - entry point
+ *
+ * Return: alway returns 0
  */
 int main(void)
 {
-    int i, p;
-    
-    
-    for (1 = 0; 1 < 100; i++)
-    {
-           
-        for (p = 0; p < 100; i++)
-                        { 
+    int i;
+    int j;
 
-               If (p > I)
-                   {
-                   putchar((i / 10) + '0');
-                   putchar((i % 10) + '0');
-                   putchar(' ');
-                                          putchar((p / 10) + '0')
-                                           Putchar((p % 10) + '0' );
-                          If (i  l= 98)
+    for (i = 0; i <= 99; i++)
+    {
+           for (j = i + 1; j <= 99; j++)
+           {
+            putchar(i / 10 + '0');
+            putchar(i % 10 + '0');
+            putchar(' ');
+            putchar(j / 10 + '0');
+            putchar(j % 10 + '0');
+
+                                   if (!(i == 98 && j == 99))
             {
                 putchar(',');
                 putchar(' ');
             }
-          }
-    
-                }
-    
-       }
-putchar('\n');
-return (0);
+        }
+    }
+    putchar('\n');
+    return (0);
 }
-
-
