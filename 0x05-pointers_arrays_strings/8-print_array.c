@@ -1,24 +1,39 @@
+#include <stdio.h>
 #include "main.h"
 
 /**
-* _strcpy - Copy paste string
-* @dest: destination
-* @src: source
-*
-* Return: destination
+* print_array - prints n element of array
+* @a: array
+* @n: number of elements
+* Return: nothing
 */
 
-char *_strcpy(char *dest, char *src)
+void print_array(int *a, int n)
+#include "main.h"
+
+/**
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
+int main(void)
 {
-	int inc = 0;
+int i;
 
-	while (*(src + inc) != '\0')
+i = 0;
+positive_or_negative(i);
+
+return (0);
+{
+	int inc;
+
+	for (inc = 0; inc < n ; inc++)
 	{
-		*(dest + inc) = *(src + inc);
-		inc++;
+		if (inc != n - 1)
+			printf("%d, ", a[inc]);
+		else
+			printf("%d", a[inc]);
+
 	}
-	*(dest + inc) = '\0';
-
-
-	return (dest);
+	putchar(10);
 }
